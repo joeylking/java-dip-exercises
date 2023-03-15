@@ -7,35 +7,6 @@ public class Main {
 
 }
 
-//PROBLEM 2
-// Violates Dependency Inversion Principle
-
-
-//PROBLEM 3
-// Violates Dependency Inversion Principle
-
-
-class ElectricOven {
-    void bake() {
-        // Baking process
-        System.out.println("Baking with electric oven");
-    }
-}
-
-
-class Kitchen {
-    private ElectricOven electricOven;
-
-
-    Kitchen() {
-        electricOven = new ElectricOven();
-    }
-
-
-    void prepareMeal() {
-        electricOven.bake();
-    }
-}
 
 //PROBLEM 4
 // Violates Dependency Inversion Principle
