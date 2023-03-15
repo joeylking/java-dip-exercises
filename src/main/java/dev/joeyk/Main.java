@@ -11,30 +11,6 @@ public class Main {
 // Violates Dependency Inversion Principle
 
 
-class FileReader {
-    String readFromFile(String filePath) {
-        // Read from file
-        return "File content";
-    }
-}
-
-
-class ContentProcessor {
-    private FileReader fileReader;
-
-
-    ContentProcessor() {
-        fileReader = new FileReader();
-    }
-
-
-    String processContent(String filePath) {
-        String content = fileReader.readFromFile(filePath);
-        // Process content
-        return "Processed content: " + content;
-    }
-}
-
 //PROBLEM 3
 // Violates Dependency Inversion Principle
 
