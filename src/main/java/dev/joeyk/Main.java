@@ -8,32 +8,6 @@ public class Main {
 }
 
 
-//PROBLEM 4
-// Violates Dependency Inversion Principle
-
-
-class Soccer {
-    void play() {
-        // Soccer playing process
-        System.out.println("Playing soccer");
-    }
-}
-
-
-class SportsClub {
-    private Soccer soccer;
-
-
-    SportsClub() {
-        soccer = new Soccer();
-    }
-
-
-    void organizeGame() {
-        soccer.play();
-    }
-}
-
 //PROBLEM 5
 // Violates Dependency Inversion Principle
 
